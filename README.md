@@ -1,3 +1,4 @@
+```
 # lucky
 # Python script to open the first three hits on a Google search
 
@@ -21,3 +22,4 @@ linkElems = soup.select('.r a')
 numOpen = min(3, len(linkElems))
 for i in range(numOpen):
     webbrowser.open('http://google.com' + linkElems[i].get('href'))
+```
